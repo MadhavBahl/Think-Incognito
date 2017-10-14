@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Think Incognito</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <h1 id="fp"></h1>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="/js/client.min.js"></script>
+        <script>
+            var client = new ClientJS(); // Create A New Client Object
+            var fingerprint = client.getFingerprint(); // Get Client's Fingerprint
+            var fp = document.getElementById('fp').innerHTML=fingerprint;
+	console.log( fingerprint );
+        </script>
+    </body>
+</html>
