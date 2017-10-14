@@ -10,16 +10,23 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'views')));
 
 app.get('/',(req,res) => {
-    res.render('index.hbs');
+    res.render('socket.hbs');
 });
 
 var server = app.listen(port);
 console.log(`Server is up on port ${port}`);
 
 var io = socket(server);
+io.sockets.on('connection', function (socket) {
+    console.log('WOW! A new connection was just made');
+    console.log('New Connection: ' + socket.id);
+});
 
-io.sockets.on('connection', newConnection);
 
-var newConnection = (socket) => {
+// var io = socket(server);
 
-}
+// io.sockets.on('connection', newConnection);
+
+// var newConnection = (socket) ={
+    
+// }
