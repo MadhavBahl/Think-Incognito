@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#logo{
+    width: 50px;
+    margin-top: 7px;
+}
+
+#endNote {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 5vh;
+}
+
+#contentFooter{
+    padding-top: 7px;
+    
+}

@@ -24,7 +24,7 @@ io.sockets.on('connection', (socket) => {
 
     socket.on('sendFP',(data) => {
         console.log(data);
-        if(data.fingerprint == '4233143392'){
+        if(data.fingerprint == '2905388570' || data.fingerprint == '4237913925'){
             var sendback = {
                 fp: data.fingerprint,
                 status: 'Found'

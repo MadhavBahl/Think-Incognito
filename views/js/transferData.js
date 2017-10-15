@@ -14,6 +14,6 @@ socket.on('sendbackFP',(sendback) => {
     console.log('The message from the server is: ',sendback.status);
 
     if(sendback.status === 'Found') {
-        fp.innerHTML = `The digital fingerprint is: ${sendback.fp}`;
+        fp.innerHTML = `Your digital fingerprint is: ${sendback.fp}`;
     }
 });
