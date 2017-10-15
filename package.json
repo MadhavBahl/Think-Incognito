@@ -21,7 +21,8 @@
     "clientjs": "^0.1.11",
     "express": "^4.16.2",
     "hbs": "^4.0.1",
-    "mongoose": "^4.12.1",
+    "mongoose": "^4.12.2",
+    "nodemon": "^1.12.1",
     "path": "^0.12.7",
     "socket.io": "^2.0.3"
   }

@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     </head>
     <body>
-        <h1>Hello World</h1>
+        <h1>WELCOME</h1>
         <h1 id="fp"></h1>
 
         <!--Import jQuery before materialize.js-->
@@ -21,10 +21,14 @@
             var socket;
             var client = new ClientJS(); // Create A New Client Object
             var fingerprint = client.getFingerprint(); // Get Client's Fingerprint
-            var fp = document.getElementById('fp').innerHTML=fingerprint;
-            socket = io.connect('http://localhost:8080');    
-
-        	console.log( fingerprint );
+            var fp = document.getElementById('fp');
+            socket = io.connect('http://localhost:8080'); 
+            var data = {fingerprint};   
+            socket.emit('fp',data);
+            socket.on('mouse',function(data) {
+                fp.innerHTML=fingerprint;
+                console.log('Just recieve a data');
+            });
         </script>
     </body>
 </html>

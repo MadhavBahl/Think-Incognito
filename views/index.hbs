@@ -13,17 +13,10 @@
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src="/js/client.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-        <script>
-            var socket;
-            var client = new ClientJS(); // Create A New Client Object
-            var fingerprint = client.getFingerprint(); // Get Client's Fingerprint
-            var fp = document.getElementById('fp').innerHTML=fingerprint;
-            socket = socket.io.connect('http://localhost:8080');    
-            console.log(socket);
-        	console.log( fingerprint );
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+        <script src="js/transferData.js"></script>
     </body>
 </html>
