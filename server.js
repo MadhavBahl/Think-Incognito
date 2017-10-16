@@ -37,22 +37,61 @@ var io = socket(server);
 io.sockets.on('connection', (socket) => {
     console.log('New connection: ' + socket.id);
 
+    socket.on('sendDataFP',(userData) => {
+        console.log('Data recieved for the user ',userData.name);
+        var newUser = new User(userData);
+        newUser.save()
+          .then((doc) => {
+            console.log('The data was saved: ',doc);
+          })
+          .catch((e) => {
+              console.log('Error: ',e);
+          });
+        io.sockets.emit('sendbackDataFP',userData);
+    });
+
     socket.on('sendFP',(data) => {
         console.log(data);
-        if(data.fingerprint == '2905388570' || data.fingerprint == '4237913925'){
+        // if(data.fingerprint == '2905388570' || data.fingerprint == '4237913925'){
+        //     var sendback = {
+        //         fp: data.fingerprint,
+        //         status: 'Found'
+        //     };
+        //     console.log('sending back: ',sendback);
+        //     io.sockets.emit('sendbackFP',sendback);
+        // } else {
+        //     var sendback = {
+        //         fp: data.fingerprint,
+        //         status: 'Not Found'
+        //     };
+        //     console.log('changed ip ??');
+        //     io.sockets.emit('sendbackFP',sendback);
+        // }
+
+        User.findOne({ 'fingerprint': data.fingerprint})
+          .then((doc) => {
+            console.log('The user was found: ',doc);
+            if(doc != 'null') {
+                var sendback = {
+                    name: doc.name,
+                    fingerprint: data.fingerprint,
+                    status: 'Found'
+                };
+                io.sockets.emit('sendbackFP',sendback);
+            } else {
+                var sendback = {
+                    fingerprint: data.fingerprint,
+                    status: 'Not Found'
+                };
+                io.sockets.emit('sendbackFP',sendback);
+            }
+          })
+          .catch((e) => {
             var sendback = {
-                fp: data.fingerprint,
-                status: 'Found'
-            };
-            console.log('sending back: ',sendback);
-            io.sockets.emit('sendbackFP',sendback);
-        } else {
-            var sendback = {
-                fp: data.fingerprint,
+                fingerprint: data.fingerprint,
                 status: 'Not Found'
             };
-            console.log('changed ip ??');
             io.sockets.emit('sendbackFP',sendback);
-        }
+          });
     });
 });

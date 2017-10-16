@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta name="description" content="Do you think that switching to your browser's Private browsing mode or Incognito mode will make you anonymous?
+                    And the websites cant track you down?
+                    \nSorry to dissappoint you my friend. YOU ARE WRONG! Everyone can track you. You can check it out for yourself." />
     <title>Think Incognito</title>
+    <link rel="shortcut icon" href="img/logo.png">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -20,7 +23,7 @@
     </nav>
 
     <div id="show1" class="container">
-        <h3 class="center">Think Incognito?</h3>
+        <h3 class="center" style="margin-top: 40px;">Think <b>Incognito</b>?</h3>
         {{!--
         <h1 id="fp"></h1> --}}
         <h5 class="center">Do you think you are
@@ -41,46 +44,48 @@
         </div>
         <h5 class="center">Enter Your Name Here And This Website Will Remember You Always!</h5>
         <form method="POST">
-            <div class="center">
-              <input style="width:30%;" class="center" type="text" value="Enter your name" />
+            <div class="center input-field" style="margin-top: 25px; ">
+              <input style="" class="center" id="name" type="text" >
+              <label class="center" style="margin-left: 44%;" for="name">Enter Your Name</label>
             </div>
             <div class="center">
-                <button type="submit" class="center">SUBMIT NAME!</button>
+                <button type="submit" id="submitBTN" onclick="sendData()" class="center grey darken-3 waves-effect waves-dark btn">SUBMIT NAME!</button>
             </div>
                 
         </form>
     </div>
 
-    <div id="show2" class="container">
-        <h3 class="center">Think Incognito?</h3>
-        {{!--
-        <h1 id="fp"></h1> --}}
-        <h5 class="center">Do you think you are
-            <b>Anonymous</b>.</h5>
+    <div id="show2" style="margin-top: 20px;" class="container">
+        <h3 class="center" style="margin-top: 20px;">You Are Not Incognito!!!!!</h3>
+        <h4 class="center">I remember, you are <b><span id="fetchName"></span></b></h4>
         <div class="row">
             <div class="col s12 offset-m3 m6">
-                <p class="center">Do you think that switching to your browser's Private browsing mode or Incognito mode will make you anonymous?
-                    And the websites cant track you down?
+                <p class="center">Welcome back to the website <b><span id="fetchName"></span></b>. If I 
+                    can remember your name even though you 
+                    are using the Private browsing / Incognito mode, I can surely track you.
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col s12 offset-m3 m6">
-                <p class="center">Sorry to dissappoint you my friend. YOU ARE WRONG! Everyone can track you. You can check it out for yourself.
-                    Just type your name below.
+                <p class="center">Sorry to dissappoint you my friend. <b>I can spy on you 
+                    even when you are using the Private browsing or Incognito mode.</b>
                 </p>
             </div>
         </div>
-        <h5 class="center">Enter Your Name Here And This Website Will Remember You Always!</h5>
-        <form method="POST">
+        <h3 class="center">Nothing is true! <b>Everything is permitted!</b></h3>
+
+        <div class="center">
+            <button type="submit" style="margin-top: 20px;" id="submitBTN" onclick="forget()" class="center waves-effect waves-dark btn">Forget Me!</button>
+        </div>
+
+        <div class="row" style="margin-top:15px;">
+            <h6 class="center">If you liked this project, don't forget to give it a Star:</h6>
             <div class="center">
-              <input style="width:30%;" class="center" type="text" value="Enter your name" />
+                <a href="https://github.com/MadhavBahlMD/Think-Incognito"><button  style="margin-top: 15px;" id="submitBTN" onclick="forget()" class=" blue-grey darken-1 center waves-effect waves-dark btn"><i class="fa fa-github grey-text text-lighten-4"></i> Think-Incognito?</button></a>
             </div>
-            <div class="center">
-                <button type="submit" class="center">SUBMIT NAME!</button>
-            </div>
-                
-        </form>
+        </div>
+
     </div>
 
     <footer id="endNote" class="grey darken-3">
@@ -109,5 +114,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
     <script src="js/transferData.js"></script>
 </body>
-
 </html>
