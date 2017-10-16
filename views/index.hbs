@@ -1,47 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Think Incognito</title>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body class="grey lighten-2">
-        <nav class="grey darken-4" >
-            <div class="nav-wrapper">
+
+<head>
+    <title>Think Incognito</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="grey lighten-2">
+    <nav class="grey darken-4">
+        <div class="nav-wrapper">
             <img src="img/logo.png" id="logo" class="responsive-img brand-logo center">
-            </div>
-        </nav>
-
-        <div class="container">
-            <h1>Think Incognito?</h1>
-            <h1 id="fp"></h1>
         </div>
+    </nav>
 
-        <footer id="endNote" class="grey darken-3" >
-            {{!-- <div class="grey darken-3">
-                <h3 class="center">
-                    THINK INCOGNITO?
-                </h3>
-            </div> --}}
-         
-          <div class="footer-copyright">
-            <div class="container grey-text text-lighten-2" id="contentFooter">
-            Designed And Developed By -- MADHAV BAHL
-            <a class="grey-text text-lighten-2 right" href="http://github.com/MadhavBahlMD"><i class="fa fa-github grey-text text-lighten-4"> Follow</i></a>
+    <div id="show1" class="container">
+        <h3 class="center">Think Incognito?</h3>
+        {{!--
+        <h1 id="fp"></h1> --}}
+        <h5 class="center">Do you think you are
+            <b>Anonymous</b>.</h5>
+        <div class="row">
+            <div class="col s12 offset-m3 m6">
+                <p class="center">Do you think that switching to your browser's Private browsing mode or Incognito mode will make you anonymous?
+                    And the websites cant track you down?
+                </p>
             </div>
-          </div>
-        </footer>
+        </div>
+        <div class="row">
+            <div class="col s12 offset-m3 m6">
+                <p class="center">Sorry to dissappoint you my friend. YOU ARE WRONG! Everyone can track you. You can check it out for yourself.
+                    Just type your name below.
+                </p>
+            </div>
+        </div>
+        <h5 class="center">Enter Your Name Here And This Website Will Remember You Always!</h5>
+        <form method="POST">
+            <div class="center">
+              <input style="width:30%;" class="center" type="text" value="Enter your name" />
+            </div>
+            <div class="center">
+                <button type="submit" class="center">SUBMIT NAME!</button>
+            </div>
+                
+        </form>
+    </div>
 
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script src="/js/client.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
-        <script src="js/transferData.js"></script>
-    </body>
+    <div id="show2" class="container">
+        <h3 class="center">Think Incognito?</h3>
+        {{!--
+        <h1 id="fp"></h1> --}}
+        <h5 class="center">Do you think you are
+            <b>Anonymous</b>.</h5>
+        <div class="row">
+            <div class="col s12 offset-m3 m6">
+                <p class="center">Do you think that switching to your browser's Private browsing mode or Incognito mode will make you anonymous?
+                    And the websites cant track you down?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 offset-m3 m6">
+                <p class="center">Sorry to dissappoint you my friend. YOU ARE WRONG! Everyone can track you. You can check it out for yourself.
+                    Just type your name below.
+                </p>
+            </div>
+        </div>
+        <h5 class="center">Enter Your Name Here And This Website Will Remember You Always!</h5>
+        <form method="POST">
+            <div class="center">
+              <input style="width:30%;" class="center" type="text" value="Enter your name" />
+            </div>
+            <div class="center">
+                <button type="submit" class="center">SUBMIT NAME!</button>
+            </div>
+                
+        </form>
+    </div>
+
+    <footer id="endNote" class="grey darken-3">
+        {{!--
+        <div class="grey darken-3">
+            <h3 class="center">
+                THINK INCOGNITO?
+            </h3>
+        </div> --}}
+
+        <div class="footer-copyright">
+            <div class="container grey-text text-lighten-2" id="contentFooter">
+                Designed And Developed By -- MADHAV BAHL
+                <a class="grey-text text-lighten-2 right" href="http://github.com/MadhavBahlMD">
+                    <i class="fa fa-github grey-text text-lighten-4"> Follow</i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="/js/client.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="js/transferData.js"></script>
+</body>
+
 </html>
