@@ -1,7 +1,7 @@
 var client = new ClientJS(); // Create A New Client Object
 var fingerprint = client.getFingerprint(); // Get Client's Fingerprint
 
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect('/' || 'http://localhost:8080');
 var data = {fingerprint: fingerprint};
 
 var show1 = document.getElementById('show1');
@@ -18,13 +18,17 @@ document.getElementById('submitBTN').addEventListener("click", function(event){
 
 function sendData() {
   var name = document.getElementById('name').value;
-  alert('Sending data for name : ' + name + ' fingerprint: ' + data.fingerprint);
+  // alert('Sending data for name : ' + name + ' fingerprint: ' + data.fingerprint);
   var userData = {
     name: name,
     fingerprint: data.fingerprint
   };
   socket.emit('sendDataFP',userData);
 };
+
+function forget() {
+    socket.emit('forgetSentData',data);
+}
 
 socket.on('sendbackDataFP',(sendbackData) => {
     console.log('Wow User data is being recieved');
@@ -43,4 +47,9 @@ socket.on('sendbackFP',(sendback) => {
         show2.style.display = 'block';
         fetchName.innerHTML = sendback.name;
     } 
+});
+
+socket.on('deletedFP',(getbackFP) => {
+    console.log('Wow the fingerprint was deleted!',getbackFP.fingerprint);
+    location.reload();
 });

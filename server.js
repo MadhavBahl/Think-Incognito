@@ -5,7 +5,7 @@ var path = require('path');
 var socket = require('socket.io');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/thinkincognito');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/thinkincognito');
 var port = process.env.PORT || 8080;
 var app = express();
 app.set('view engine', 'hbs');
@@ -48,6 +48,17 @@ io.sockets.on('connection', (socket) => {
               console.log('Error: ',e);
           });
         io.sockets.emit('sendbackDataFP',userData);
+    });
+
+    socket.on('forgetSentData',(getbackData) => {
+        User.findOneAndRemove({'fingerprint': getbackData.fingerprint},(err,backData) => {
+            if(err) {
+                console.log('Could not delete the given record',err);
+            } else {
+                console.log('Record deleted',backData);
+                io.sockets.emit('deletedFP',getbackData);
+            }
+        });
     });
 
     socket.on('sendFP',(data) => {
