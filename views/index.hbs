@@ -44,14 +44,14 @@
                 </p>
             </div>
         </div>
-        <h5 class="center">Enter Your Name Here And This Website Will Remember You Always!</h5>
+        <h5 class="center">Search something Here And This Website Will Remember You Always!</h5>
         <form method="POST">
             <div class="center input-field" style="margin-top: 25px; ">
-              <input style="" class="center" id="name" type="text" >
-              <label class="center" style="margin-left: 44%;" for="name">Enter Your Name</label>
+              <input style="" class="center" id="name" type="text" autofocus>
+              <label class="center" style="margin-left: 44%;" for="name"><i class="fa fa-search" aria-hidden="true"></i> Google search </label>
             </div>
             <div class="center">
-                <button type="submit" id="submitBTN" onclick="sendData()" class="center grey darken-3 waves-effect waves-dark btn">SUBMIT NAME!</button>
+                <button type="submit" id="submitBTN" onclick="sendData()" class="center grey darken-3 waves-effect waves-dark btn">SEARCH!</button>
             </div>
                 
         </form>
@@ -59,12 +59,12 @@
 
     <div id="show2" style="margin-top: 20px;" class="container">
         <h3 class="center" style="margin-top: 20px;">You Are Not Incognito!!!!!</h3>
-        <h4 class="center">I remember, you are <b><span id="fetchName"></span></b></h4>
+        <h4 class="center">I remember, you searched for <b>"<span id="fetchName"></span>"</b> last time</h4>
         <div class="row">
             <div class="col s12 offset-m3 m6">
                 <p class="center">Welcome back to the website <b><span id="fetchName"></span></b>. If I 
-                    can remember your name even though you 
-                    are using the Private browsing / Incognito mode, I can surely track you.
+                    can remember what you searched last time, even though you 
+                    were/are using the Private browsing / Incognito mode, I can surely track you.
                 </p>
             </div>
         </div>

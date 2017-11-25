@@ -21,6 +21,9 @@ body{
     
 }
 
+#show1{
+    display: none;
+}
 #show2{
     display: none;
 }

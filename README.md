@@ -11,13 +11,16 @@ Look at some memes :)
 ### How were they related to this article?
 I will be answering to all your questions shortly.
 
-First, go visit this website: <a href="https://think-incognito.herokuapp.com/">Think Incognito</a>
-  * Enter your **NAME** there.
+  * Open your browser's *Private browsing* (Or, *Incognito mode*)
+  * Go visit this website: <a href="https://think-incognito.herokuapp.com/">Think Incognito</a>
+  * Searche anything you want to search on google there.
   * Close that window.
-  * Open *Private browsing* or *Incognito Mode*.
-  * Again visit the same website<br />
+  * Open *Private browsing* or *Incognito Mode* (OR, normal browsing would also do).
+  * Again visit the same website: <a href="https://think-incognito.herokuapp.com/">Think Incognito</a><br />
+
+  
 SURPRIZED????
-Yes, the website can remember your name even if you had visited it via the Private browsing or Incognito Mode. Yes, nothing is private in this world anymore!. This is what the big companies are doing with your identity. You think that going into private mode will wipe out all the traces?. Absolutely Not! Actually, using the private browsing or incognito mode will just help you to clear your browsing history. Your internet service providers, search engines and your favorite websites can still track you. They can know you. They know what you like and dislike. They use your data to earn money.<br />
+Yes, the website can remember what you searched for even though you had visited it via the Private browsing or Incognito Mode. Yes, nothing is private in this world anymore!. This is what the big companies are doing with your identity. You think that going into private mode will wipe out all the traces?. Absolutely Not! Actually, using the private browsing or incognito mode will just help you to clear your browsing history. Your internet service providers, search engines and your favorite websites can still track you. They can know you. They know what you like and dislike. They use your data to earn money.<br />
 Go on see these two 5 minute videos:<br />
 <a href="https://www.youtube.com/watch?v=5pFX2P7JLwA">The Terrifying Cost of "Free” Websites</a> <br />
 <a href="https://www.youtube.com/watch?v=RpxHpQShVes">Social media: The digital fingerprint</a>
@@ -32,14 +35,16 @@ Whenever you open up the website next time, first it goes through all those keys
  * https://en.wikipedia.org/wiki/Device_fingerprint
  * https://nakedsecurity.sophos.com/2014/12/01/browser-fingerprints-the-invisible-cookies-you-cant-delete/
 
-Find more about me: <a href="../MyWrites/Myself.md">Madhav Bahl</a> <br />
+Find more about me: <a href="http://madhavbahl.ml">Madhav Bahl</a> <br />
 ##### MADHAV BAHL <kbd>[madhavbahl.ml](http://madhavbahl.ml) / [LinkedIn](https://www.linkedin.com/in/madhavbahl/) / [Github](https://www.github.com/MadhavBahlMD) / [E-Mail](mailto:madhavbahl@gmail.com)</kbd>
 
-Just enter your name!
-![image](https://user-images.githubusercontent.com/26179770/31600121-e46e0dbe-b272-11e7-833c-88695db5ca7b.png)
+Just search something you need to search on google!
+![image](https://user-images.githubusercontent.com/26179770/33233274-3915e61c-d239-11e7-83a0-8ef00e31a348.png)
 
-Then this website will remember your name!
-![image](https://user-images.githubusercontent.com/26179770/31600559-944bcd88-b274-11e7-91c1-846553e6638c.png)
+Then this website will remember your search!
+![image](https://user-images.githubusercontent.com/26179770/33233277-495f1f52-d239-11e7-981b-d7d8124238ad.png)
 
 Even if you are incognito!
-![image](https://user-images.githubusercontent.com/26179770/31600595-ad3a4e50-b274-11e7-812c-084eb8e7d101.png)
+![image](https://user-images.githubusercontent.com/26179770/33233294-ac4fdea8-d239-11e7-8719-bf64384a17ae.png)
+
+

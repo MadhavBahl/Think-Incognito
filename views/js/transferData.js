@@ -33,9 +33,10 @@ function forget() {
 socket.on('sendbackDataFP',(sendbackData) => {
     console.log('Wow User data is being recieved');
     console.log('The user details are: ',sendbackData);
-    show1.style.display = 'none';
-    show2.style.display = 'block';
-    fetchName.innerHTML = sendbackData.name;
+    // show1.style.display = 'none';
+    // show2.style.display = 'block';
+    // fetchName.innerHTML = sendbackData.name;
+    window.location.href = `https://www.google.com/search?btnG=1&pws=0&q=${sendbackData.name}&gws_rd=ssl`;
 });
 
 socket.on('sendbackFP',(sendback) => {
@@ -46,7 +47,11 @@ socket.on('sendbackFP',(sendback) => {
         show1.style.display = 'none';
         show2.style.display = 'block';
         fetchName.innerHTML = sendback.name;
-    } 
+    } else {
+        show1.style.display = 'block';
+        show2.style.display = 'none';
+
+    }
 });
 
 socket.on('deletedFP',(getbackFP) => {
