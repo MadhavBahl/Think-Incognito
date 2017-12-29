@@ -25,16 +25,6 @@ Go on see these two 5 minute videos:<br />
 <a href="https://www.youtube.com/watch?v=5pFX2P7JLwA">The Terrifying Cost of "Free” Websites</a> <br />
 <a href="https://www.youtube.com/watch?v=RpxHpQShVes">Social media: The digital fingerprint</a>
 
-#### How ThinkIncognito was made?
-THINK INCOGNITO uses the browser fingerprinting feature of Client.js to obtain the fingerprint of your web browser.
-When you submit your name, your name( an instance of data) gets stored with your digital fingerprint as the key.
-Whenever you open up the website next time, first it goes through all those keys, to check whether the information regarding your browser already exists or not, if yes, then that is displayed.
-
-#### References
- * https://privatebrowsingmyths.com/
- * https://en.wikipedia.org/wiki/Device_fingerprint
- * https://nakedsecurity.sophos.com/2014/12/01/browser-fingerprints-the-invisible-cookies-you-cant-delete/
-
 Find more about me: <a href="http://madhavbahl.ml">Madhav Bahl</a> <br />
 ##### MADHAV BAHL <kbd>[madhavbahl.ml](http://madhavbahl.ml) / [LinkedIn](https://www.linkedin.com/in/madhavbahl/) / [Github](https://www.github.com/MadhavBahlMD) / [E-Mail](mailto:madhavbahl@gmail.com)</kbd>
 
