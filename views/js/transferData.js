@@ -36,7 +36,7 @@ socket.on('sendbackDataFP',(sendbackData) => {
     // show1.style.display = 'none';
     // show2.style.display = 'block';
     // fetchName.innerHTML = sendbackData.name;
-    window.location.href = `https://www.google.com/search?btnG=1&pws=0&q=${sendbackData.name}&gws_rd=ssl`;
+    window.location.href = `https://www.google.co.in/search?q=${sendbackData.name}`;
 });
 
 socket.on('sendbackFP',(sendback) => {
