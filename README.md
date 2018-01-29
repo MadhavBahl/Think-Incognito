@@ -19,6 +19,10 @@ Yes, the website can remember what you searched for even though you had visited 
 Find more about me: <a href="http://madhavbahl.ml">Madhav Bahl</a> <br />
 ##### MADHAV BAHL <kbd>[madhavbahl.ml](http://madhavbahl.ml) / [LinkedIn](https://www.linkedin.com/in/madhavbahl/) / [Github](https://www.github.com/MadhavBahlMD) / [E-Mail](mailto:madhavbahl@gmail.com)</kbd>
 
+### NOTE
+This project was inspired from gautamkrishnar's nothing private (https://github.com/gautamkrishnar/nothing-private) this project is node and mongo implementation of above mentioned project.
+Thanks for the idea nothning private, it really inspired me a lot :)
+
 Just search something you need to search on google!
 ![image](https://user-images.githubusercontent.com/26179770/33233274-3915e61c-d239-11e7-83a0-8ef00e31a348.png)
 
