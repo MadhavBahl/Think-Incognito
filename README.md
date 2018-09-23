@@ -7,7 +7,7 @@ I will be answering to all your questions shortly.
 
   * Open your browser's *Private browsing* (Or, *Incognito mode*)
   * Go visit this website: <a href="https://think-incognito.herokuapp.com/">Think Incognito</a>
-  * Searche anything you want to search on google there.
+  * Search anything you want to search on google there.
   * Close that window.
   * Open *Private browsing* or *Incognito Mode* (OR, normal browsing would also do).
   * Again visit the same website: <a href="https://think-incognito.herokuapp.com/">Think Incognito</a><br />

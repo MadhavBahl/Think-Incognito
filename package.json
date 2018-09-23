@@ -4,6 +4,7 @@
   "description": "Think-Incognito\r ---------------\r You Think You Are Incognito? This Will PROVE You Wrong.",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
